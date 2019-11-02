@@ -13,6 +13,7 @@
     "express": "~4.16.1",
     "morgan": "~1.9.1",
     "natural": "^0.6.3",
+    "nodemon": "^1.19.4",
     "stopword": "^0.3.3"
   }
 }
