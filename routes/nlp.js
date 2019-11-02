@@ -38,14 +38,7 @@ router.post('/s-analyzer', function(req, res, next) {
   console.log(analysis);
   console.log('------------------------------------');
 
-  // console.log('------------------------------------');
-  // console.log(analyzer.getSentiment(['I', 'feel', 'good']));
-  // console.log('------------------------------------');
-  res.status(200).json({
-    review: filteredReview.join(' ').toLowerCase(),
-    analysis,
-    error: 'none'
-  });
+  res.status(200).json({ analysis });
 });
 
 module.exports = router;
