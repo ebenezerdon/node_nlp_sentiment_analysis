@@ -33,10 +33,6 @@ router.post('/s-analyzer', function(req, res, next) {
     tokenizedReview[index] = spellCorrector.correct(word);
   })
 
-  console.log('------------------------------------');
-  console.log(tokenizedReview);
-  console.log('------------------------------------');
-
   // remove stopwords
   const filteredReview = SW.removeStopwords(tokenizedReview);
 
